@@ -1,6 +1,6 @@
-import sjekkomriktig
+import sjekkomintastriktig
 import tilfeldig
-import riktig
+import sjekkriktig
 
 # start of program, asking if you want to play a game
 print("Hi, what's your name")
@@ -13,8 +13,8 @@ secretNumber = tilfeldig.tilfeldig()
 for attempts in range(1, max+1):
     print("Take a guess")
     guess = int(input())
-    i = sjekkomriktig.check_if_in_range(attempts, secretNumber, guess, max)
+    i = sjekkomintastriktig.check_if_in_range(attempts, secretNumber, guess, max)
     if i == "true":
         break
 
-riktig.check_if_correct (attempts, secretNumber, guess, name)
+sjekkriktig.check_if_correct (attempts, secretNumber, guess, name)
